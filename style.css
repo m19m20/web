@@ -1,0 +1,166 @@
+*{
+  padding: 0%;
+  margin: 0%;
+}
+header{
+  height: 100px;
+  width: 100%;
+  background-image: linear-gradient(to right,rgb(255, 145, 0),rgb(255, 153, 0));
+}
+#logoBox{
+  width: 30%;
+  height: 100%;
+  float: right;
+  background-color: rgb(196, 141, 40);
+}
+#hh1{
+ float: left;
+line-height: 100px;
+padding: 0 15px;
+}
+header a{
+  color: rgba(250, 122, 3, 0.938);
+}
+#logo{
+  height:100%;
+  border-radius: 50%;
+
+}
+nav{
+  width: 70%;
+  text-align: center;
+}
+nav a{
+  text-decoration: non;
+ font-weight: bold;
+ color: black;
+ display: inline-block;
+}
+nav li{
+  display: inline-block;
+  line-height: 100px;
+  width: 100px;
+  background-color: chocolate;
+  text-align: center;
+}
+nav a:hover{
+  background-color: rgba(94, 66, 5, 0.589); 
+  color: aliceblue;
+  height: 100%;
+  width: 100%;
+}
+main{
+  width: 100%;
+  height: 450px;
+  background-color: rgb(226, 80, 43);
+  border-top: 3px solid white;
+  animation-name:changeBackground ;
+  animation-duration:15s ;
+  animation-iteration-count: infinite;
+}
+aside{
+  width: 30%;
+  height: 100%;
+  background-color: whitesmoke;
+  text-align: center;
+  float: left;
+}
+aside img{
+width: 40%;
+}
+#h1aside{
+  padding: 20px 0;
+  border-bottom: 2px solid rgb(14, 110, 43);
+  color:rgb(14, 110, 43) ;
+}
+#art{
+  float: right;
+width: 70%;
+height: 450px;
+position: relative;
+}
+#box{
+  position: absolute;
+  width: 400px;
+  height: 180px;
+  background-color: rgb(226, 214, 43);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+#box h1{
+border-bottom: 3px solid rgb(190, 95, 6);
+padding: 15px 0;
+}
+#bo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  border-bottom: 2px double rgb(14, 110, 43)   ;
+}
+#bo img{
+  width: 45px;
+ padding-left: 3px;
+ padding-right: 3px;
+}
+#bo img:hover{
+  width: 70px;
+  border-bottom: 2px solid black;
+}
+@keyframes changeBackground{
+  0%{
+    background-color: rgb(190, 95, 6);
+  }
+  50%{
+    background-color: rgb(216, 145, 13);
+  }
+  100%{
+    background-color: rgb(245, 245, 245);
+  }
+}
+@media only screen and (min-width:940px) and (max-width:1070px){
+  #logoBox{
+    width: 35%;
+  }
+  #art{
+    width: 65%;
+  }
+  #aside{
+    width: 35%;
+  }
+}
+  @media only screen and(max-width:940px) and (min-width:802px) {
+    #logoBox{
+      width: 40%;
+    }
+  }
+  @media only screen and (max-width:801px) {
+    header,main{
+      height: auto;
+    }
+    #logBox{
+      width: 100%;
+      text-align: center;
+    }
+    #hh1,#logo{
+      float: none;
+    }
+    nav{
+      width: 100%;
+    }
+    aside{
+      width: 100%;
+    }
+    #art{
+      height: 230px;
+      width: 100%;
+      background-color: blanchedalmond;
+    }
+    @media only  screen and(max-width:500px) {
+      nav li{
+        display: block;
+      }
+    }
+  }
